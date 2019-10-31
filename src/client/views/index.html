@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Travel App Weather Forcast</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            Logo
+        </div>
+        <div class="nav">
+            navigation
+        </div>
+    </header>
+    <!-- onblur="onBlur()" -->
+    <main>
+        <section>
+            <form class="form">
+                <input id="city-name" type="text" name="city" value=""
+                    placeholder="Enter the travel destination you would want to travel">
+                <input id="date" type="date" name="date" value="" placeholder="Departing date"> 
+                <div id="generate"> Generate </div>
+            </form>
+        <section>
+
+                <section>
+                    <strong></strong>
+                    <div id="results_category" class="category-label"></div>
+                    <div id="results" class="blog-article"></div>
+
+                </section>
+
+    </main>
+
+    <footer>
+        <p>This is a footer</p>
+    </footer>
+
+    <!--  <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script> -->
+
+</body>
+
+</html>
