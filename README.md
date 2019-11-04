@@ -1,10 +1,19 @@
-# Weather-Journal App Project
+# Capstone Project - Travel Weather App
 
 ## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+This is a travel planner website where you could search for destination - city or country by selecting the departure date and return date. You will see the days left to travel, days you will stay at your destination. You will also see the weather conditions while your stay.
+You can also remove the trip from the list.
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+## Run the project
+ - npm install
+ - npm run build-prod
+ - npm run build-dev
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+ server: npm start
+
+## Requirements implemented
+ - Added end date and display length of trip.
+ - the user can remove the trip.
+ - added validations if the trip not found or error in selecting the dates.
+
+

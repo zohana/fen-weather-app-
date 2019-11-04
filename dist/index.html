@@ -5,43 +5,48 @@
     <meta charset="utf-8">
     <title>Travel App Weather Forcast</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap" rel="stylesheet">
-</head>
+<link href="main.css" rel="stylesheet"></head>
 
 <body>
 
     <header>
-        <div class="logo">
-            Logo
-        </div>
-        <div class="nav">
-            navigation
-        </div>
+        <h1>MY TRIP PLANNER</h1>
     </header>
     <!-- onblur="onBlur()" -->
     <main>
         <section>
-            <form class="form">
+            <form class="form" onsubmit="return Client.performAction(event)">
                 <input id="city-name" type="text" name="city" value=""
                     placeholder="Enter the travel destination you would want to travel">
-                <input id="date" type="date" name="date" value="" placeholder="Departing date"> 
-                <div id="generate"> Generate </div>
+                <div class="date-wrapper">
+                    <div class="form-group">
+                        <label>Departing on</label>
+                        <input id="departure-date" type="date" name="date" value=""  placeholder="Departing date">
+                    </div>
+                    <div class="form-group">
+                        <label>Return</label>
+                        <input id="comeback-date" type="date" name="date_return" value="" placeholder="Return date">
+                    </div>
+                </div>
+
+                <div id="generate" class="submit-button"> Generate and save</div>
             </form>
+        </section>
         <section>
-
-                <section>
-                    <strong></strong>
-                    <div id="results_category" class="category-label"></div>
-                    <div id="results" class="blog-article"></div>
-
-                </section>
-
+            <strong></strong>
+            <div class="error hide-s" id="error-div">*** ERROR - Please donot leave the search box empty </div>
+            <div class="error hide-d" id="error-div-d">*** ERROR - Please donot leave the date empty </div>
+            <div class="error hide-t" id="error-div-t">*** ERROR - Please check the return date. It cannot be less than the date of departure. </div>
+            
+            <div class="" id="each-trip-wrapper">
+            </div>
+        </section>
     </main>
-
     <footer>
         <p>This is a footer</p>
     </footer>
 
-    <!--  <script>
+      <script>
         // Check that service workers are supported
         if ('serviceWorker' in navigator) {
             // Use the window load event to keep the page load performant
@@ -49,7 +54,7 @@
                 navigator.serviceWorker.register('/service-worker.js');
             });
         }
-    </script> -->
+    </script> 
 
 <script type="text/javascript" src="main.js"></script></body>
 

@@ -1,11 +1,20 @@
 form {
-    border: 1px solid #ccc;
+    //border: 1px solid #ccc;
     border-radius: 3px;
     padding: 30px;
+    background-color: #595959;
 
 }
 
-input[type=text], input[type=date] {
+h1{
+    color: #e6e6e6;
+}
+
+label{
+    color: white;
+}
+
+input[type=text]{
     padding: 5px 20px;
     width: 80%;
     line-height: 3em;
@@ -14,6 +23,25 @@ input[type=text], input[type=date] {
     border-radius: 5px;
     font-size: 14px;
     font-family: 'Nunito', sans-serif;
+    background-color: #e6e6e6;
+}
+
+input[type=date]{
+    padding: 5px 20px;
+    width: 70%;
+    line-height: 3em;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    background-color: #e6e6e6;
+   
+}
+
+.date-wrapper{
+    display: flex;
+    margin-top: 1em;
 }
 
 input[type=submit]{
@@ -26,3 +54,82 @@ input[type=submit]{
     border-radius: 4px;
     font-family: 'Nunito', sans-serif;
 }
+
+/* p{
+    margin: 5px;
+} */
+
+.item{
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    padding-left: 2em;
+    
+    //background-color: red;
+}
+
+.item > h3{
+    margin-top: 0!important;
+    margin-bottom: 10px!important;
+}
+
+.image{
+    width: 300px;
+    height: 230px;
+    margin-right: 2em;
+    border: 7px solid #fff;
+}
+.image > img{
+    width: 300px;
+    height: 230px;
+}
+
+.info{
+    display: flex;
+    padding: 3em 0px;
+    background-color: pink;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    color: #333333;
+}
+
+.btn{
+    width: 100px;
+    height: 3em;
+    border: 2px solid #fff;
+    font-size: 13px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #f8ecf2;
+}
+
+.form-group{
+    display: grid;
+}
+
+.hide-s,.hide-d,.hide-t {
+    visibility: hidden;
+}
+.show-s, .show-d, .show-t{
+    visibility: visible;
+    color: #e6b3b3;
+}
+
+.submit-button{
+    padding: 1.5em;
+    background-color: pink;
+    margin-top: 1em;
+    border-radius: 5px;
+    color: #404040;
+    cursor: pointer;
+    width: 80%;
+}
+
+.submit-button:hover{
+    background-color: #ffe6ea;
+}
+
+
